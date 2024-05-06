@@ -1,9 +1,13 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 15px;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  gap: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .title {
@@ -11,32 +15,35 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 18px;
+  font-size: 32px;
   font-weight: 600;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
 }
 
-::placeholder {
-  color: #858585;
+.link {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #404565;
 }
 
-.input {
-  width: 400px;
-  background-color: transparent;
-  border-bottom: 1px solid black;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  padding: 8px;
-  outline: none;
-  color: #404565;
+.span {
+  text-decoration: none;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #616691;
+}
+
+.span:hover {
+  color: #8590c0;
+  transition: 300ms linear, color 300ms linear;
+}
+
+.gif {
+  width: 200px;
+  height: 200px;
 }
