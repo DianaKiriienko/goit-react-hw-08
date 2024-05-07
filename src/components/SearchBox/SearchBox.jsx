@@ -29,12 +29,12 @@ export const SearchBox = () => {
           onChange={handleChange}
           placeholder="Search by name..." className={css.input } />
             {isLoading && !error && <b><Loader /></b>}
-            {filteredContacts.map(contact => (
+            {/* {filteredContacts.map(contact => (
                 <div key={contact.id}>
                     <p>{contact.name}</p>
                     <p>{contact.number}</p>
                 </div>
-            ))}
+            ))} */}
         </div>
     );
 }
